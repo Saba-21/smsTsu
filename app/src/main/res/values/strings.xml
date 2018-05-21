@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">sms.tsu</string>
+    <string name="base_url"> </string>
+    <string name="but_nav_screen_result_text">go to result screen</string>
+    <string name="but_nav_screen_add_text">go to add screen</string>
+</resources>
