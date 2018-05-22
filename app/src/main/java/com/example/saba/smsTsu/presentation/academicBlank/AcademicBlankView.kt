@@ -1,13 +1,14 @@
 package com.example.saba.smsTsu.presentation.academicBlank
 
 import com.example.saba.smsTsu.mvi.view.BaseView
+import io.reactivex.Observable
 
 interface AcademicBlankView : BaseView<AcademicBlankViewState>{
 
-    fun goToSemesterTableScreen()
+    fun goToSemesterTableScreen():Observable<Any>
 
-    fun goToStudentBlankScreen()
+    fun goToStudentBlankScreen():Observable<Any>
 
-    fun goToSemesterBlankScreen()
+    fun goToSemesterBlankScreen():Observable<Any>
 
 }
