@@ -33,7 +33,7 @@ class AppModule{
     @Singleton
     @Named("base_url")
     fun provideBaseUrl(context: Context):
-            String = context.getString(R.string.base_url)
+            String = ""
 
     @Provides
     @Singleton

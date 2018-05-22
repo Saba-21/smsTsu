@@ -5,12 +5,13 @@ import com.example.saba.smsTsu.presentation.main.actions.DrawAddingScreenAction
 import com.example.saba.smsTsu.presentation.main.actions.DrawResultScreenAction
 import com.example.saba.smsTsu.presentation.add.AddingNavigator
 import com.example.saba.smsTsu.presentation.get.ResultNavigator
+import com.example.saba.smsTsu.presentation.splash.SplashNavigator
 
 class MainPresenter: BasePresenter<MainViewState, MainView>(),
-        AddingNavigator, ResultNavigator {
+        AddingNavigator, ResultNavigator, SplashNavigator {
 
     override fun getInitialViewState():
-            MainViewState = MainViewState(MAIN_VIEW_DRAW_ADDING_SCREEN_STATE)
+            MainViewState = MainViewState(MAIN_VIEW_DRAW_SPLASH_SCREEN_STATE)
 
     override fun onFirstAttach() {
     }
@@ -23,6 +24,10 @@ class MainPresenter: BasePresenter<MainViewState, MainView>(),
     }
 
     override fun goToAddingScreen() {
+        dispatchAction(DrawAddingScreenAction())
+    }
+
+    override fun goToMainFormScreen() {
         dispatchAction(DrawAddingScreenAction())
     }
 
