@@ -7,7 +7,7 @@ class GoToMainFormScreenAction(navigator: SplashNavigator) :
         NavigatorAction<SplashNavigator>(navigator) {
 
     override fun commitNavigatorAction() {
-        navigator.goToMainFormScreen()
+        navigator.goToStudentBlankScreen()
     }
 
 }

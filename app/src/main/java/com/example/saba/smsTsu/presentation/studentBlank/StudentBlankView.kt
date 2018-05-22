@@ -1,4 +1,13 @@
 package com.example.saba.smsTsu.presentation.studentBlank
 
-interface StudentBlankView {
+import com.example.saba.smsTsu.mvi.view.BaseView
+
+interface StudentBlankView : BaseView<StudentBlankViewState>{
+
+    fun goToAcademicBlankScreen()
+
+    fun goToSemesterBlankScreen()
+
+    fun goToSemesterTableScreen()
+
 }

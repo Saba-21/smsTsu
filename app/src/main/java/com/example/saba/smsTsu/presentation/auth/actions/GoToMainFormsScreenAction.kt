@@ -7,7 +7,7 @@ class GoToMainFormsScreenAction(navigator: AuthNavigator) :
         NavigatorAction<AuthNavigator>(navigator) {
 
     override fun commitNavigatorAction() {
-        navigator.goToMainFormScreen()
+        navigator.goToStudentBlankScreen()
     }
 
 }
