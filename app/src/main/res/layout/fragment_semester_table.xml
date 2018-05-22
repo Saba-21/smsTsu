@@ -15,8 +15,9 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/toolbarPerson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
         android:src="@drawable/ic_toolbar_person"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toStartOf="@+id/toolbarBlank"
@@ -25,8 +26,9 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/toolbarSemester"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
         android:src="@drawable/ic_toolbar_semester"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toStartOf="@+id/toolbarTable"
@@ -35,8 +37,9 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/toolbarBlank"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
         android:src="@drawable/ic_toolbar_blank"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toStartOf="@+id/toolbarSemester"
@@ -45,12 +48,24 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/toolbarTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
         android:src="@drawable/ic_toolbar_table"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/toolbarSemester"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/semester_table"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 </android.support.constraint.ConstraintLayout>

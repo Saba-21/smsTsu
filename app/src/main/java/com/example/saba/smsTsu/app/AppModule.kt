@@ -3,7 +3,6 @@ package com.example.saba.smsTsu.app
 import android.app.Application
 import android.arch.persistence.room.Room
 import android.content.Context
-import com.example.saba.smsTsu.R
 import com.example.saba.smsTsu.domain.dataProvider.global.GlobalDataProvider
 import com.example.saba.smsTsu.domain.dataProvider.local.LocalDataProvider
 import com.example.saba.smsTsu.domain.dataProvider.local.LocalDataProviderImpl
@@ -29,11 +28,11 @@ class AppModule{
     fun provideContext(application: Application):
             Context = application
 
-    @Provides
-    @Singleton
-    @Named("base_url")
-    fun provideBaseUrl(context: Context):
-            String = ""
+//    @Provides
+//    @Singleton
+//    @Named("base_url")
+//    fun provideBaseUrl(context: Context):
+//            String = ""
 
     @Provides
     @Singleton

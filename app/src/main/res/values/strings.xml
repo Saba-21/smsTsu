@@ -4,5 +4,9 @@
     <string name="hint_login_email">Email</string>
     <string name="hint_login_password">Password</string>
     <string name="text_login_button">Login</string>
+    <string name="student_blank">Student Blank</string>
+    <string name="semester_table">Semester Table</string>
+    <string name="semester_blank">Semester Blank</string>
+    <string name="academic_blank">Academic Blank</string>
 
 </resources>
