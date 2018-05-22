@@ -4,4 +4,5 @@ interface SplashNavigator {
 
     fun goToMainFormScreen()
 
+    fun goToAuthScreen()
 }

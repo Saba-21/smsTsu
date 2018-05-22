@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".presentation.auth.AuthFragment">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd_login_screen_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd_login_screen_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".8" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd_login_screen_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd_login_screen_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_login_email"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/ic_login_email"
+        app:layout_constraintBottom_toBottomOf="@+id/et_login_email"
+        app:layout_constraintStart_toStartOf="@+id/gd_login_screen_start"
+        app:layout_constraintTop_toTopOf="@+id/et_login_email" />
+
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:hint="@string/hint_login_email"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/iv_login_email"
+        app:layout_constraintBottom_toTopOf="@+id/et_login_password"
+        app:layout_constraintEnd_toStartOf="@+id/gd_login_screen_end"
+        app:layout_constraintTop_toTopOf="@+id/gd_login_screen_top" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_email"
+        app:layout_constraintEnd_toStartOf="@+id/gd_login_screen_end"
+        app:layout_constraintStart_toStartOf="@+id/gd_login_screen_start" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_login_password"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/ic_login_password"
+        app:layout_constraintBottom_toBottomOf="@+id/et_login_password"
+        app:layout_constraintStart_toStartOf="@+id/gd_login_screen_start"
+        app:layout_constraintTop_toTopOf="@+id/et_login_password" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:hint="@string/hint_login_password"
+        android:inputType="textWebPassword"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/iv_login_password"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login_button"
+        app:layout_constraintEnd_toStartOf="@+id/gd_login_screen_end"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_email" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_password"
+        app:layout_constraintEnd_toStartOf="@+id/gd_login_screen_end"
+        app:layout_constraintStart_toStartOf="@+id/gd_login_screen_start" />
+
+    <TextView
+        android:id="@+id/tv_login_button"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/text_login_button"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_login_button"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/gd_login_screen_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/gd_login_screen_end"
+        app:layout_constraintStart_toStartOf="@+id/gd_login_screen_start"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_password"/>
+
+
+</android.support.constraint.ConstraintLayout>

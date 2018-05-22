@@ -14,19 +14,13 @@ import java.util.concurrent.TimeUnit
 
 class SplashFragment : BaseFragment<SplashViewState, SplashPresenter>(), SplashView {
 
-    override fun reflectState(state: SplashViewState) {
-        when (state.state) {
-            SPLASH_VIEW_INITIAL_STATE -> Log.e("reflectState","SPLASH_VIEW_INITIAL_STATE")
-        }
-    }
+    override fun reflectState(state: SplashViewState) { }
 
     override fun onPresenterReady(presenter: SplashPresenter) {
         presenter.attach(this)
     }
 
-    override fun renderView(view: View?, savedInstanceState: Bundle?) {
-
-    }
+    override fun renderView(view: View?, savedInstanceState: Bundle?) { }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -44,6 +38,9 @@ class SplashFragment : BaseFragment<SplashViewState, SplashPresenter>(), SplashV
     }
 
     override fun goToMainFormScreen():
+            Observable<Boolean> = Observable.just(true).delay(2500, TimeUnit.MILLISECONDS)
+
+    override fun goToAuthScreen():
             Observable<Boolean> = Observable.just(true).delay(2500, TimeUnit.MILLISECONDS)
 
 }

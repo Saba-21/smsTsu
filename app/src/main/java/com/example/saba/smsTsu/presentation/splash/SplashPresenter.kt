@@ -1,7 +1,7 @@
 package com.example.saba.smsTsu.presentation.splash
 
 import com.example.saba.smsTsu.mvi.presenter.BasePresenter
-import com.example.saba.smsTsu.presentation.splash.actions.GoToMainFormScreenAction
+import com.example.saba.smsTsu.presentation.splash.actions.GoToAuthScreenAction
 
 class SplashPresenter(private val splashNavigator: SplashNavigator)
     : BasePresenter<SplashViewState, SplashView>() {
@@ -10,7 +10,7 @@ class SplashPresenter(private val splashNavigator: SplashNavigator)
 
         registerPerPresenterDisposables(getView()
                 .goToMainFormScreen()
-                .map { GoToMainFormScreenAction(splashNavigator) }
+                .map { GoToAuthScreenAction(splashNavigator) }
                 .subscribe(this::dispatchAction))
     }
 

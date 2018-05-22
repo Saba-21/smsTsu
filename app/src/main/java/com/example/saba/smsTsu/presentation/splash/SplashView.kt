@@ -7,4 +7,6 @@ interface SplashView : BaseView<SplashViewState>{
 
     fun goToMainFormScreen(): Observable<Boolean>
 
+    fun goToAuthScreen(): Observable<Boolean>
+
 }

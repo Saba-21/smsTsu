@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">sms.tsu</string>
+
+    <string name="hint_login_email">Email</string>
+    <string name="hint_login_password">Password</string>
+    <string name="text_login_button">Login</string>
 </resources>

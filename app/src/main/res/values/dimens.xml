@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_size_splash_screen">200dp</dimen>
+    <dimen name="text_size_splash_screen">18sp</dimen>
+    <dimen name="text_size_login_button">20sp</dimen>
+</resources>

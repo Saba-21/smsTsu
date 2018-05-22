@@ -9,7 +9,7 @@ class SplashFragmentModule {
 
     @Provides
     @PerFragment
-    fun provideResultPresenter(splashNavigator: SplashNavigator):
+    fun provideSplashPresenter(splashNavigator: SplashNavigator):
             SplashPresenter = SplashPresenter(splashNavigator)
 
 }
