@@ -12,9 +12,9 @@ class SemesterBlankPresenter(private val semesterBlankNavigator: SemesterBlankNa
 
     override fun onFirstAttach() {
         registerPerPresenterDisposables(
-                getView().goToAcademicBlankScreen().map { GoToAcademicBlankScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction),
-                getView().goToSemesterTableScreen().map { GoToSemesterTableScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction),
-                getView().goToStudentBlankScreen().map { GoToStudentBlankScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction)
+//                getView().goToAcademicBlankScreen().map { GoToAcademicBlankScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction),
+//                getView().goToSemesterTableScreen().map { GoToSemesterTableScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction),
+//                getView().goToStudentBlankScreen().map { GoToStudentBlankScreenAction(semesterBlankNavigator) }.subscribe(this::dispatchAction)
         )
     }
 

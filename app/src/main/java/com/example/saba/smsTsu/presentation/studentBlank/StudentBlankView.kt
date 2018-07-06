@@ -5,10 +5,10 @@ import io.reactivex.Observable
 
 interface StudentBlankView : BaseView<StudentBlankViewState>{
 
-    fun goToAcademicBlankScreen():Observable<Any>
-
-    fun goToSemesterBlankScreen():Observable<Any>
-
-    fun goToSemesterTableScreen(): Observable<Any>
+//    fun goToAcademicBlankScreen():Observable<Any>
+//
+//    fun goToSemesterBlankScreen():Observable<Any>
+//
+//    fun goToSemesterTableScreen(): Observable<Any>
 
 }

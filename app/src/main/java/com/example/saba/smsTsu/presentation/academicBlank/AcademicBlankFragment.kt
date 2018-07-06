@@ -13,14 +13,19 @@ import kotlinx.android.synthetic.main.fragment_academic_blank.*
 
 class AcademicBlankFragment : BaseFragment<AcademicBlankViewState, AcademicBlankPresenter>(), AcademicBlankView {
 
-    override fun goToStudentBlankScreen(): Observable<Any> = RxView.clicks(toolbarPerson)
-
-    override fun goToSemesterBlankScreen(): Observable<Any> = RxView.clicks(toolbarSemester)
-
-    override fun goToSemesterTableScreen(): Observable<Any> = RxView.clicks(toolbarTable)
+//    override fun goToStudentBlankScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
+//
+//    override fun goToSemesterBlankScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
+//
+//    override fun goToSemesterTableScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
 
     override fun renderView(view: View?, savedInstanceState: Bundle?) {
-        toolbarBlank.setColorFilter(ContextCompat.getColor(context!!, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN)
     }
 
     override fun reflectState(state: AcademicBlankViewState) { }

@@ -12,15 +12,20 @@ import io.reactivex.Observable
 import kotlinx.android.synthetic.main.fragment_semester_table.*
 
 class SemesterTableFragment : BaseFragment<SemesterTableViewState, SemesterTablePresenter>(), SemesterTableView {
+//    override fun goToStudentBlankScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
+//
+//    override fun goToAcademicBlankScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
+//
+//    override fun goToSemesterBlankScreen(): Observable<Any> {
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//    }
 
-    override fun goToStudentBlankScreen(): Observable<Any> = RxView.clicks(toolbarPerson)
-
-    override fun goToAcademicBlankScreen(): Observable<Any> = RxView.clicks(toolbarBlank)
-
-    override fun goToSemesterBlankScreen(): Observable<Any> = RxView.clicks(toolbarSemester)
 
     override fun renderView(view: View?, savedInstanceState: Bundle?) {
-        toolbarTable.setColorFilter(ContextCompat.getColor(context!!, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN)
     }
 
     override fun reflectState(state: SemesterTableViewState) { }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/one"
+            android:icon="@drawable/ic_toolbar_blank"
+            android:title="one" />
+        <item
+            android:id="@+id/two"
+            android:icon="@drawable/ic_toolbar_blank"
+            android:title="two" />
+        <item
+            android:id="@+id/three"
+            android:icon="@drawable/ic_toolbar_blank"
+            android:title="three" />
+        <item
+            android:id="@+id/four"
+            android:icon="@drawable/ic_toolbar_blank"
+            android:title="four" />
+        <item
+            android:id="@+id/five"
+            android:icon="@drawable/ic_toolbar_blank"
+            android:title="five" />
+    </group>
+</menu>
